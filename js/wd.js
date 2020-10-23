@@ -25,8 +25,8 @@ var desktop_banner = '<div id="carouselExampleSlidesOnly" class="carousel slide"
 var banner = desktop_banner;
 
 if(browser.versions.mobile||browser.versions.android||browser.versions.ios) { 
-    var banner = mobile_banner;
+    document.write(mobile_banner);
 }
-
-document.write(banner);
-document.write('<h1>我是標題唷你這個小JJ</h1>');
+else{
+    document.write(desktop_banner);
+}
