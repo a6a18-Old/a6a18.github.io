@@ -20,5 +20,5 @@ var browser={
     }
     
 if(browser.versions.mobile||browser.versions.android||browser.versions.ios) { 
-    document.getElementsByClassName('carousel-item active').innerHTML = <img src="https://cdnstatic.svc.litv.tv/banner/1600423997L.jpg" class="d-block w-100" alt="..."></img>;
+    document.getElementsByClassName('carousel-item active').innerHTML = "ㄍㄎㄋ";
 }
