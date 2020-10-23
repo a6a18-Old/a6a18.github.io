@@ -28,3 +28,4 @@ if(browser.versions.mobile||browser.versions.android||browser.versions.ios) {
 }
 
 document.write(banner);
+document.write('<h1>我是標題唷你這個小JJ</h1>');
