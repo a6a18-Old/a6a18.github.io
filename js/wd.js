@@ -19,7 +19,12 @@ var browser={
     language:(navigator.browserLanguage || navigator.language).toLowerCase()
     }
 
-document.write('<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"><div class="carousel-inner"><div class="carousel-item active"><img src="http://homegoodies.com.tw/wp-content/uploads/2020/10/0b-cat-1-scaled-e1602429209120.jpg" class="d-block w-100" alt="..."></div></div></div>');
+var mobile_banner = '<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"><div class="carousel-inner"><div class="carousel-item active"><img src="https://cdnstatic.svc.litv.tv/banner/1600423997L.jpg" class="d-block w-100" alt="..."></div></div></div>'
+var desktop_banner = '<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel"><div class="carousel-inner"><div class="carousel-item active"><img src="http://homegoodies.com.tw/wp-content/uploads/2020/10/0b-cat-1-scaled-e1602429209120.jpg" class="d-block w-100" alt="..."></div></div></div>';
+
+
 if(browser.versions.mobile||browser.versions.android||browser.versions.ios) { 
-    document.getElementsByClassName('carousel-item active').innerHTML = "ㄍㄎㄋ";
+    var banner = mobile_banner;
 }
+
+document.write(banner);
